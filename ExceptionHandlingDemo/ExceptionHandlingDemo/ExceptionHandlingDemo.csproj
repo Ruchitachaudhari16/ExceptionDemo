@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="DivideByZero_Exception.cs" />
     <Compile Include="HandleException.cs" />
+    <Compile Include="IndexOutOfRangeException.cs" />
+    <Compile Include="NullException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

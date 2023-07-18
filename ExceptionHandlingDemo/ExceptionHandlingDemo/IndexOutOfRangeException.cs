@@ -1,28 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ExceptionHandlingDemo
 {
-    public  class NullException
+   public class IndexOutOfRangeException
     {
-        public void Display()
+        public void Range()
         {
             try
             {
-                string str = null;
-                Console.WriteLine(str.Substring(5));
-            }
-            catch(NullReferenceException ex)
+                List<Exception> exceptions = new List<Exception>();
+                Console.WriteLine(exceptions[2]);
+            } 
+            catch(ArgumentOutOfRangeException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-
         }
-       
-        
     }
 }
