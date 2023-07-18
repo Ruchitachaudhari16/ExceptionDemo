@@ -12,6 +12,9 @@ namespace ExceptionHandlingDemo
         {
             HandleException handleException = new HandleException();
             handleException.Display();
+
+            DivideByZero_Exception divideByZeroException = new DivideByZero_Exception();
+            divideByZeroException.Custom();
             Console.ReadLine();
         }
     }
